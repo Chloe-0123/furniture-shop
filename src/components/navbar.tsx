@@ -49,11 +49,14 @@ export const Navbar = () => {
         
       </div>
     </div>
-    {isLivingOpen && <DropdownMenu options={['teere','q34rq23r','aweffe','awefwef','aefef']}/>} 
+    <div className="dropdown">
+    {isLivingOpen && <DropdownMenu options={['Shop All','Sofas','Tables','New Arrivals', 'livingroom1.png', 'livingroom2.png']}/>} 
     {isDiningOpen && <DropdownMenu options={['teeraefe','q34rqewf23e323r','awef2222fe','awqfefwef','aefeavf']}/>}
     {isBedroomOpen && <DropdownMenu options={['123123123','q3434r','a5466e','aw97f','a2432434f']}/>}
     {isServicesOpen && <DropdownMenu options={['srgwg4t','q323433455r','asgslkjglkr','werf','a']}/>}
-</>
+    </div>
+   
+  </>
 
   )
   
