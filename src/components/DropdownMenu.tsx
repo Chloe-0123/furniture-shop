@@ -1,8 +1,13 @@
 import React from 'react'
 
+
+type Options = {
+    options: string[]
+
+}
 export const DropdownMenu = () => {
   return (
-    <div>   
+    <div className='bg-slate-500 w-screen'>   
         <li>test1</li>
         <li>test2</li>
         <li>test3</li>

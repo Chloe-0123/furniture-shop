@@ -23,53 +23,38 @@ export const Navbar = () => {
   };
 
   return (
-  
-    <div className="flex flex-1 w-full justify-center " >
-    {/* Single button */}
-
-      <div className="living relative " onMouseEnter={handleLiving} onMouseLeave={handleLiving}>
-          <button className="bg-gray-200 hover:bg-gray-300 py-2 px-4 rounded"  >
-              LIVING
-          </button>
-          {isLivingOpen && (
-              <DropdownMenu />
-          )} 
-
+    <>
+    <div className="flex flex-1 w-full justify-center">
+      <div className="living relative" onMouseEnter={handleLiving} onMouseLeave={handleLiving}>
+        <button className="bg-gray-200 hover:bg-gray-300 py-2 px-4 rounded">
+          LIVING
+        </button>
       </div>
-      
-        
       <div className="dining" onMouseEnter={handleDining} onMouseLeave={handleDining}>
-      <button className="bg-gray-200 hover:bg-gray-300 py-2 px-4 rounded"  >
+        <button className="bg-gray-200 hover:bg-gray-300 py-2 px-4 rounded">
           DINING
-      </button>
-      {isDiningOpen && (
-        <DropdownMenu />
-      )}
-
+        </button>
+        
       </div>
-        
-        
       <div className="bedroom" onMouseEnter={handleBedroom} onMouseLeave={handleBedroom}>
-      <button className="bg-gray-200 hover:bg-gray-300 py-2 px-4 rounded"  >
+        <button className="bg-gray-200 hover:bg-gray-300 py-2 px-4 rounded">
           BEDROOM
-      </button>
-      {isBedroomOpen && (
-        <DropdownMenu />
-      )}
-
-      </div>
-        
-        
-      <div className="services" onMouseEnter={handleServices} onMouseLeave={handleServices}>
-      <button className="bg-gray-200 hover:bg-gray-300 py-2 px-4 rounded"  >
-      OUR SERVICES
-      </button>
-      {isServicesOpen && (
-          <DropdownMenu />
-      )}
-      </div>
+        </button>
        
+      </div>
+      <div className="services" onMouseEnter={handleServices} onMouseLeave={handleServices}>
+        <button className="bg-gray-200 hover:bg-gray-300 py-2 px-4 rounded">
+          OUR SERVICES
+        </button>
+        
+      </div>
     </div>
-  )
-}
+    {isLivingOpen && <DropdownMenu />}
+    {isDiningOpen && <DropdownMenu />}
+    {isBedroomOpen && <DropdownMenu />}
+    {isServicesOpen && <DropdownMenu />}
+</>
 
+  )
+  
+}
