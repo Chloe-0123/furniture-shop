@@ -49,10 +49,10 @@ export const Navbar = () => {
         
       </div>
     </div>
-    {isLivingOpen && <DropdownMenu />}
-    {isDiningOpen && <DropdownMenu />}
-    {isBedroomOpen && <DropdownMenu />}
-    {isServicesOpen && <DropdownMenu />}
+    {isLivingOpen && <DropdownMenu options={['teere','q34rq23r','aweffe','awefwef','aefef']}/>} 
+    {isDiningOpen && <DropdownMenu options={['teeraefe','q34rqewf23e323r','awef2222fe','awqfefwef','aefeavf']}/>}
+    {isBedroomOpen && <DropdownMenu options={['123123123','q3434r','a5466e','aw97f','a2432434f']}/>}
+    {isServicesOpen && <DropdownMenu options={['srgwg4t','q323433455r','asgslkjglkr','werf','a']}/>}
 </>
 
   )

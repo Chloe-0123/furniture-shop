@@ -1,18 +1,19 @@
 import React from 'react'
 
 
+
 type Options = {
-    options: string[]
+    options: Array<string>
 
 }
-export const DropdownMenu = () => {
+export const DropdownMenu = ({options} : Options) => {
   return (
     <div className='bg-slate-500 w-screen'>   
-        <li>test1</li>
-        <li>test2</li>
-        <li>test3</li>
-        <li>test4</li>
-        <li>test5</li>
+        <li>{options[0]}</li>
+        <li>{options[1]}</li>
+        <li>{options[2]}</li>
+        <li>{options[3]}</li>
+        <li>{options[4]}</li>
 
 
     </div>
