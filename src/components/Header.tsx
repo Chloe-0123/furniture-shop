@@ -7,8 +7,13 @@ export const Header = () => {
 
   return (
     <>
-    <a href="#">Modish Moments</a>
-    <Navbar />
+    <div className="header bg-yellow-50">
+
+      <div className="name text-center"><a href="#" >Modish Moments</a></div>
+      
+      <Navbar />
+    </div>
+   
     
     </>
     
